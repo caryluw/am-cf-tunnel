@@ -656,7 +656,7 @@ function getConfigLink(uuid, host, address, port, remarks) {
 	let tls = ['tls', true];
 	if (host.includes('.workers.dev') || host.includes('pages.dev')) {
 		path = `/${host}${path}`;
-		remarks += ' 请通过绑定自定义域名订阅！';
+		remarks += ' 专属连接，请勿共享！！';
 	}
 
 	const v2ray = getV2rayLink({ protocolType, host, uuid, address, port, remarks, encryption, path, fingerprint, tls });
@@ -728,7 +728,7 @@ function getConfigHtml(userID, host, remark, v2ray, clash) {
 	const htmlHead = `
     <head>
       <title>${projectName}(${fileName})</title>
-      <meta name='description' content='This is a project to generate free vmess nodes. For more information, please subscribe youtube(AM科技) https://youtube.com/@AM_CLUB and follow GitHub https://github.com/amclubs ' />
+      <meta name='description' content=' 定制节点' />
       <style>
         body {
           font-family: Arial, sans-serif;
@@ -775,10 +775,9 @@ function getConfigHtml(userID, host, remark, v2ray, clash) {
 	const header = `
 		<p align="left" style="padding-left: 20px; margin-top: 20px;">
 		</br>
-		<a href="t.me/AM_CLUBS" target="_blank">t.me/AM_CLUBS</a>
+		<a href="专属节点" target="_blank">t.me/AM_CLUBS</a>
 		</br></br>
-		GitHub项目地址 点击Star!Star!Star!</br>
-		<a href="https://github.com/${projectName}" target="_blank">https://github.com/${projectName}</a>
+		请勿共享！！！</br>
 		<a href="${ytName}" target="_blank">${ytName}</a>
 		</p>
   `;
