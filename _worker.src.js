@@ -1,9 +1,3 @@
-/**
- * YouTube Channel: https://youtube.com/@AM_CLUB
- * GitHub Repository: https://github.com/amclubs
- * Telegram Group: https://t.me/AM_CLUBS
- * Personal Blog: https://am.809098.xyz
- */
 
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
@@ -44,9 +38,9 @@ let ipUrlCsv = [
 ];
 // Preferred addresses with optional TLS subscription
 let ipLocal = [
-	'visa.cn:443#youtube.com/@AM_CLUB 订阅频道获取更多教程',
-	'icook.hk#t.me/AM_CLUBS 加入交流群解锁更多优选节点',
-	'time.is#github.com/amclubs GitHub仓库查看更多项目'
+	'visa.cn:443
+	'icook.hk
+	'time.is
 ];
 let noTLS = 'false';
 let sl = 5;
@@ -780,13 +774,11 @@ function getConfigHtml(userID, host, remark, v2ray, clash) {
 	// Prepare header string with left alignment
 	const header = `
 		<p align="left" style="padding-left: 20px; margin-top: 20px;">
-		Telegram交流群 技术大佬~在线交流</br>
+		</br>
 		<a href="t.me/AM_CLUBS" target="_blank">t.me/AM_CLUBS</a>
 		</br></br>
 		GitHub项目地址 点击Star!Star!Star!</br>
 		<a href="https://github.com/${projectName}" target="_blank">https://github.com/${projectName}</a>
-		</br></br>
-		YouTube频道,订阅频道,更多技术分享</br>
 		<a href="${ytName}" target="_blank">${ytName}</a>
 		</p>
   `;
